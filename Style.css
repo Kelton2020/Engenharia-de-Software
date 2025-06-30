@@ -1,0 +1,231 @@
+/* ======= RESET E BASE ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffdf7;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  color: #e66b2d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #c44f12;
+}
+
+/* ======= CABEÇALHO ======= */
+header {
+  background-color: #015958;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-family: 'Merienda', cursive;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #ffd3b6;
+}
+
+/* ======= SEÇÃO PRINCIPAL (primeiro) ======= */
+.primeiro {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('cabo-verde-banner.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.primeiro h1 {
+  font-size: 2.5rem;
+  font-family: 'Merienda', cursive;
+  margin-bottom: 1.5rem;
+}
+
+.primeiro button {
+  background-color: #e66b2d;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.primeiro button:hover {
+  background-color: #bf4a17;
+}
+
+/* ======= DESTAQUE MUSICAL (segundo) ======= */
+.segundo {
+  padding: 4rem 2rem;
+  background-color: #fff5eb;
+}
+
+.segundo h2 {
+  font-size: 2rem;
+  color: #015958;
+  font-family: 'Merienda', cursive;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cesaria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cesaria img {
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cesaria h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cesaria p {
+  margin-bottom: 0.5rem;
+}
+
+/* ======= FESTAS E TRADIÇÕES (terceiro) ======= */
+.terceiro {
+  padding: 4rem 2rem;
+  background-color: #f0fbf9;
+}
+
+.terceiro h2 {
+  font-size: 2rem;
+  color: #015958;
+  font-family: 'Merienda', cursive;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.festas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.item {
+  background-color: #e66b2d;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  background-color: #c75218;
+}
+
+/* ======= RODAPÉ ======= */
+footer {
+  background-color: #015958;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+}
+
+footer .socials {
+  margin-top: 0.5rem;
+}
+
+footer a {
+  color: #ffb88c;
+  margin: 0 0.3rem;
+}
+
+footer a:hover {
+  color: #ffc7a8;
+}
+
+/* ======= RESPONSIVO ======= */
+@media (max-width: 768px) {
+  .cesaria {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .primeiro h1 {
+    font-size: 2rem;
+  }
+
+  .primeiro button {
+    font-size: 0.9rem;
+  }
+}
+.video {
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.btn-explorar {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #e66b2d;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-explorar:hover {
+  background-color: #cc571e;
+}
+ .imagem-tabanka {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;}
